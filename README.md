@@ -36,7 +36,7 @@ Contained books. Books were identified by their respective International Standar
 
 Contains the book rating information. Ratings (Book-Rating) are either explicit, expressed on a scale from 1-10 (higher values denoting higher appreciation), or implicit, expressed by 0.
 
-                    **Visualizations**:
+                    Visualizations:
 ***
                  i. Ratings
  <img src="Images\ratings.jpg"  width="750" height="400"> 
