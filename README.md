@@ -39,25 +39,25 @@ Contains the book rating information. Ratings (Book-Rating) are either explicit,
                     Visualizations:
 
                  i. Ratings
- <img src="Images\ratings.png"  width="650" height="400"> 
+ <img src="Images\ratings.jpg"  width="650" height="400"> 
 
                  ii. Years vs. Number of books made
-<img src="Images\years.png"  width="650" height="400">
+<img src="Images\years.jpg"  width="650" height="400">
 
                  iii. Average age of readers per country
- <img src="Images\newplot.png"  width="650" height="400"> 
+ <img src="Images\avg_age.png"  width="650" height="400"> 
  
-                 iii. Top 10 Authors
- <img src="Images\authors.png"  width="650" height="400"> 
+                 iv. Top 10 Authors
+ <img src="Images\top10authors.jpg"  width="650" height="400"> 
  
-                 iii. Top 10 books
- <img src="Images\top10books.png"  width="650" height="400"> 
+                 v. Top 10 books
+ <img src="Images\top10books.jpg"  width="650" height="400"> 
  
-                 iii. Top 10 publishers
- <img src="Images\top10publishers.png"  width="650" height="400"> 
+                 vi. Top 10 publishers
+ <img src="Images\top10publishers.jpg"  width="650" height="400"> 
  
-                 iii. Average Rating per Country
- <img src="Images\newplot1.png"  width="650" height="400"> 
+                 vii. Average Rating per Country
+ <img src="Images\avg_rating.png"  width="650" height="400"> 
  
 
 ## Modelling
