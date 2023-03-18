@@ -74,9 +74,13 @@ We will be using the matrix factorization with SVD(Singular Value Decomposition)
 ## Evaluation
 ***
 Recommender systems have become an essential tool for online businesses to provide personalized recommendations to their users. The performance of a recommender system is often evaluated based on various metrics, such as precision, recall, F1-score, and so on. However, some types of recommender systems, such as the popularity-based ones, lack a performance metric as they provide recommendations solely based on the popularity of the items.
+
 Despite this limitation, the popularity-based recommender can be used as an initial model when individual user data is unavailable. For instance, in situations where a new user signs up for a service, and the system has no data on their preferences, a popularity-based recommender can provide a general sense of the most popular or commonly viewed items. This approach can help the system to learn more about the user's preferences and provide more personalized recommendations later on.
+
 On the other hand, a book recommender system with an RMSE of 1.47 indicates that the system's predicted ratings deviate from the actual ratings by an average of 1.47 stars. While this may seem like a significant difference, it is relatively low compared to the range of possible ratings. For example, if the rating scale is from 1 to 5 stars, an RMSE of 1.47 implies that the system's recommendations are accurate within about one star, on average. This relatively low RMSE value suggests that the system is providing fairly accurate recommendations.
+
 It is also noteworthy that the statement mentions the removal of implicit data. Implicit data refers to the data that the system gathers indirectly, such as the user's browsing history or search queries. While this data can be useful, it may also introduce biases and noise into the recommendations. Therefore, removing implicit data can improve the accuracy and fairness of the system's recommendations.
+
 Overall, the evaluation suggests that the book recommender system is performing quite well, especially after accounting for the removal of implicit data. However, it is essential to keep in mind that the performance of a recommender system is not solely determined by a single metric, and other factors such as user satisfaction and system scalability should also be considered.
 
 ## Conclusion
@@ -92,7 +96,7 @@ A book recommender system that takes into account the individual preferences of 
 
 ## For More Information
 ***
-See the full analysis in the [Jupyter Notebook]() or review this [presentation]().
+See the full analysis in the [Jupyter Notebook](https://github.com/FridahKimathi/Book-Recommendation-System/blob/main/index.ipynb) or review this [presentation](https://github.com/FridahKimathi/Book-Recommendation-System/blob/main/Book%20Recommendation%20System.pptx.pdf).
 
 ## Repository Structure
 ***
@@ -100,8 +104,8 @@ See the full analysis in the [Jupyter Notebook]() or review this [presentation](
 ```
 ├── Data
 ├── Images
-├── jumia Book Recommendation System.docx
-├── PPT
+├── Book Recommendation System.pptx.pdf
+├── Jumia Book Recommendation System Data Report.pdf
 ├── README.md
 └── index.ipynb
 ```
