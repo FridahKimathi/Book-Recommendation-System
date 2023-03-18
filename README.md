@@ -62,7 +62,20 @@ Contains the book rating information. Ratings (Book-Rating) are either explicit,
 
 ## Modelling
 ***
- 
+ #### Popularity-Based Recommendation:
+•	Simple recommendation system that does not take into account user tastes
+•	Based on the popularity of books (number of ratings and average rating)
+•	Top 10 most popular books with more than 200 ratings were recommended
+  No quantitative metric was used to evaluate its performance
+
+#### Content-Based Recommendation:
+•	Used book author, publisher, and ratings to recommend similar books
+•	Tokenized the words using TF-IDF Vectorizer
+•	Calculated the Cosine Similarity Score using sklearn's linear_kernel
+•	However, the linear_kernel operation resulted in a MemoryError due to the large size of the dataset
+•	No quantitative metric was used to evaluate its performance, but it was evaluated qualitatively based on the recommended books.
+
+
 
 ## Evaluation
 ***
