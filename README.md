@@ -10,7 +10,7 @@
 
 ## Overview
 ****
-The goal of this project is to develop a machine learning model that can provide personalized book recommendations to users based on their reading history and interests. The model will analyze various factors, such as author, publication year, and user ratings, to identify books that the user is likely to enjoy but has not read yet.
+The project aims to develop a machine learning model that can provide personalized book recommendations to users based on their past ratings. The model will analyze the user’s ratings on books to identify patterns and preferences and recommend books that the user is likely to enjoy but has not read yet.
 
 ## Business Problem
 ***
@@ -59,45 +59,36 @@ Contains the book rating information. Ratings (Book-Rating) are either explicit,
                  vii. Average Rating per Country
  <img src="Images\avg_rating.png"  width="750" height="400"> 
  
-
 ## Modelling
 ***
- #### Popularity-Based Recommendation:
-•	Simple recommendation system that does not take into account user tastes
+The modeling of this project consists of multiple recommender system implementations:
 
-•	Based on the popularity of books (number of ratings and average rating)
+**Popularity Based Recommendation system:**
 
-•	Top 10 most popular books with more than 200 ratings were recommended
-  No quantitative metric was used to evaluate its performance
+This focuses on getting the most positively rated books amongst the most viewers possible. It is a simple implementation, however, in most scenarios where knowing the users’ data and books’ information is not possible, this can apply due to the fact that it still will end up recommending books that will fit a good majority of the readers who rate.
 
-#### Content-Based Recommendation:
-•	Used book author, publisher, and ratings to recommend similar books
+**Model-Based Collaborative Filtering Recommendation system:**
 
-•	Tokenized the words using TF-IDF Vectorizer
-
-•	Calculated the Cosine Similarity Score using sklearn's linear_kernel
-
-•	However, the linear_kernel operation resulted in a MemoryError due to the large size of the dataset
-
-•	No quantitative metric was used to evaluate its performance, but it was evaluated qualitatively based on the recommended books.
-
-
+We will be using the matrix factorization with SVD(Singular Value Decomposition) to ensure the latent features in our dataset will compare books and the users who rate them and produce a matrix that can produce estimates of books to better recommend them to potential readers.
 
 ## Evaluation
 ***
-
-
-## Limitations
-***
-
+Recommender systems have become an essential tool for online businesses to provide personalized recommendations to their users. The performance of a recommender system is often evaluated based on various metrics, such as precision, recall, F1-score, and so on. However, some types of recommender systems, such as the popularity-based ones, lack a performance metric as they provide recommendations solely based on the popularity of the items.
+Despite this limitation, the popularity-based recommender can be used as an initial model when individual user data is unavailable. For instance, in situations where a new user signs up for a service, and the system has no data on their preferences, a popularity-based recommender can provide a general sense of the most popular or commonly viewed items. This approach can help the system to learn more about the user's preferences and provide more personalized recommendations later on.
+On the other hand, a book recommender system with an RMSE of 1.47 indicates that the system's predicted ratings deviate from the actual ratings by an average of 1.47 stars. While this may seem like a significant difference, it is relatively low compared to the range of possible ratings. For example, if the rating scale is from 1 to 5 stars, an RMSE of 1.47 implies that the system's recommendations are accurate within about one star, on average. This relatively low RMSE value suggests that the system is providing fairly accurate recommendations.
+It is also noteworthy that the statement mentions the removal of implicit data. Implicit data refers to the data that the system gathers indirectly, such as the user's browsing history or search queries. While this data can be useful, it may also introduce biases and noise into the recommendations. Therefore, removing implicit data can improve the accuracy and fairness of the system's recommendations.
+Overall, the evaluation suggests that the book recommender system is performing quite well, especially after accounting for the removal of implicit data. However, it is essential to keep in mind that the performance of a recommender system is not solely determined by a single metric, and other factors such as user satisfaction and system scalability should also be considered.
 
 ## Conclusion
 ***
-
+A book recommender system that takes into account the individual preferences of each user is more likely to be effective than one that provides generic recommendations. Collaborative filtering, which involves analyzing the behavior and preferences of similar users to make recommendations, was used for building book recommender systems. The effectiveness of a book recommender system is heavily dependent on the quality of the data. For the model to run optimally the data fed to it should be  accurate, relevant, and up-to-date. The performance of a book recommender system was evaluated using the Root Mean Square Metric(RMSE). This metric was used to identify areas for improvement and optimize the system for better performance.
 
 ## Recommendations
 ***
-
+* Ensure data quality. Ensure that the data used to train and test the model is accurate, relevant and up-to-date
+* Incorporate more types of data, such as book genres and authors, to enhance the recommendation system's effectiveness.
+* Regularly evaluate the performance of the book recommender system using appropriate metrics to identify areas for improvement and optimize the system for better performance.
+* Develop a user interface that is intuitive and user-friendly, to improve user engagement and satisfaction.
 
 ## For More Information
 ***
